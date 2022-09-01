@@ -12,14 +12,12 @@ function createGalleryOfImages(images) {
   return images
     .map(image => {
       return `
-    <div class="gallery__item">
 <a class="gallery__item" href="${image.original}">
   <img 
   class="gallery__image" 
   src="${image.preview}" 
   alt="${image.description}" />
 </a>
-    </div>
     `;
     })
     .join('');
@@ -31,7 +29,6 @@ containerOfImages.insertAdjacentHTML('beforeend', galleryMarkup);
 let lightbox = new SimpleLightbox('.gallery .gallery__item', {
   captionsData: 'alt',
   captionDelay: 250,
-  showCounter: false,
 });
 
 
