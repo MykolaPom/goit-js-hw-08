@@ -29,28 +29,3 @@ function submitForm(e) {
   localStorage.removeItem(LOCALSTORAGE_KEY);
   form.reset();
 }
-
-  
-  
-
-
-// const refs = {
-//   form: document.querySelector('.feedback-form'),
-//   input: document.querySelector('.feedback-form input'),
-//   textarea: document.querySelector('.feedback-form textarea'),
-// };
-
-// console.log(refs);
-
-// refs.form.addEventListener('submit', onFormSubmit);
-// refs.form.addEventListener('input', onTextareaInput);
-
-// function onFormSubmit(event) {
-
-
-// }
-
-// function onTextareaInput(event) {
-//   const value = event.currentTarget.value;
-//   console.log(value);
-// }
